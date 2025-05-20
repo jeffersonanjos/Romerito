@@ -57,6 +57,7 @@ def login():
             print(f"User ID found: {user_id}")
             user = User(user_id, username, None)  # Cria um usuário com ID retornado
             login_user(user)
+            login_manager8
             return redirect(url_for('dash'))
         else:
             print("Login failed: invalid username or password.")
